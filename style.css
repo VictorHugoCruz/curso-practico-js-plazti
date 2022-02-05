@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main-cuadrado-container{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.main-cuadrado-container h2{
+    font-size: 2.4rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+

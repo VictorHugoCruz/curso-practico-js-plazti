@@ -5,55 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1>Figuras Geometricas</h1>
-        <p>Este es el primer taller del curso practico de JavaScript</p>
+        <h1 class="titulo">Figuras Geometricas</h1>
+        <p class="parrafo">Este es el primer taller del curso practico de JavaScript</p>
     </header>
-    <section>
-        <h2>Calcula el area y el perimetro del cuadrado</h2>
-        <form action="">
-            <label for="InputCuadrado">
-                Escribe cuanto mide el lado del cuadrado
-            </label>
 
-            <input id="InputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcula el perimetro del cuadrado
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcula el area del cuadrado
-            </button>
-        </form>
-    </section>
-    <section>
-        <h2>Calcula el area y el perimetro del Triangulo</h2>
-        <form action="">
-            <label for="InputTrianguloLado1">
-                Escribe cuanto mide el primer lado del triangulo
-            </label>
 
-            <input id="InputTrianguloLado1" type="number">
+    <section class="main-cuadrado-container">
+        
+            <h2>Calcula el area y el perimetro del cuadrado</h2>
 
-            <label for="InputTrianguloLado2">
-                Escribe cuanto mide el segundo lado del triangulo
-            </label>
+            <form action="" class="cuadrado-form">
+                <label for="InputCuadrado">
+                    Escribe cuanto mide el lado del cuadrado:
+                </label>
 
-            <input id="InputTrianguloLado2" type="number">
+                <input id="InputCuadrado" type="number">
 
-            <label for="InputBase">
-                Escribe cuanto mide la base del triangulo
-            </label>
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcula el perimetro del cuadrado
+                </button>
 
-            <input id="InputBase" type="number">
-            <button type="button" onclick="calcularPerimetroTriangulo()">
-                Calcula el perimetro del Triangulo
-            </button>
-            <button type="button" onclick="calcularAreaTriangulo()">
-                Calcula el area del Triangulo
-            </button>
-        </form>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcula el area del cuadrado
+                </button>
+            </form>
     </section>
     <script src="./figuras.js"></script>
 </body>
