@@ -1,22 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 62.5%;
+}
+
 header{
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: aqua;
 }
 
-.main-cuadrado-container{
+
+
+.main-section-container{
     width: 90%;
     height: 600px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    background-color: azure;
+
 }
 
-.main-cuadrado-container h2{
+.main-section-container h2{
     font-size: 2.4rem;
     line-height: 2.3rem;
     font-weight: bold;
@@ -25,5 +43,49 @@ header{
     margin-bottom: 50px;
 }
 
+.main-section-container form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
+.main-section-container form label{
+    font-size: 1.6rem;
+    text-align: center;
 
+}
+
+.main-section-container form input{
+    width: 80%;
+    height: 2rem;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: aquamarine;
+}
+
+.main-section-container form input:hover{
+    border: 0.1rem solid #ff0f55;
+    border-radius: 0.5rem;
+}
+
+.main-section-container form button{
+   width: 50%;
+    height: auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 1.3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.main-section-container form button:hover{
+    border: 0.1rem solid #ff0f55;
+}
